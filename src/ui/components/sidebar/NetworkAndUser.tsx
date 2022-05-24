@@ -9,12 +9,20 @@ import { classes } from 'ui/util';
 
 const options = [
   {
+    label: 'SubLink',
+    value: RPC.SUBLINK,
+  },
+  {
     label: 'Local Node',
     value: RPC.LOCAL,
   },
   {
     label: 'Canvas',
     value: RPC.CANVAS,
+  },
+  {
+    label: 'Defi with SubLink',
+    value: RPC.DEFILINK,
   },
 ];
 

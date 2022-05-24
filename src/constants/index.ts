@@ -7,6 +7,8 @@ import type { ApiState } from 'types';
 export enum RPC {
   LOCAL = 'ws://127.0.0.1:9944',
   CANVAS = 'wss://rococo-canvas-rpc.polkadot.io',
+  SUBLINK = 'wss://sublinkchain.ltk.codes',
+  DEFILINK = 'wss://defichain.ltk.codes',
 }
 export const DEFAULT_DECIMALS = 12;
 
@@ -21,7 +23,7 @@ export const NULL_CHAIN_PROPERTIES = {
 
 export const INIT_STATE: ApiState = {
   ...NULL_CHAIN_PROPERTIES,
-  endpoint: RPC.LOCAL,
+  endpoint: RPC.SUBLINK,
   keyringStatus: null,
   error: null,
   status: 'CONNECT_INIT',
